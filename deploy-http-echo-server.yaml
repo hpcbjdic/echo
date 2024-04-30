@@ -1,5 +1,9 @@
 - name: deploy-http-echo-server
   hosts: <address>
   tasks:
+   - name: copy script to VM
+     ansible.builtin.copy:
+         src: files/echo.py
+         dest: ~/
    - name: start echo server
      shell: nohup python3 echo.py -b "<address>" &

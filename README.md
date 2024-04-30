@@ -8,6 +8,7 @@ In order to deploy it on *your* server, do the following:
 4) Replace the string \<address\> in deploy-http-echo-server.yaml (lines 2 and 9) and inventory.ini (line 2) by the address of your VM.
 5) Run the playbook via
    $> ansible-playbook -u debian -i inventory.ini deploy-http-echo-server.yaml
+   (when asking for confirmation, check the fingerprint of the remote server and confirm if correct)
 6) Use the service, e.g. by doing
    $> curl "http://\<host\>:3246"
 

@@ -1,5 +1,5 @@
 - name: deploy-http-echo-server
-  hosts: a917254f-575f-4831-8807-712d285c0506.fr.bw-cloud-instance.org
+  hosts: <address>
   tasks:
    - name: start echo server
-     shell: nohup python3 echo.py -b "a917254f-575f-4831-8807-712d285c0506.fr.bw-cloud-instance.org" &
+     shell: nohup python3 echo.py -b "<address>" &
